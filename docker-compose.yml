@@ -1,0 +1,12 @@
+version: '3'
+services:
+  symfony:
+    build: ./
+    container_name: 'symfony'
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - "8002:80"
+    environment:
+      - TZ=America/Mexico_city
+
